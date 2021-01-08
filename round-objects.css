@@ -1,0 +1,7 @@
+.round_object {
+    width: 95%; 
+    height: 95%;
+    border-radius: 50%;
+    position: absolute; top: 15px; left:15px;
+    z-index: 5;
+}

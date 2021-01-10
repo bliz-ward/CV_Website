@@ -5,13 +5,13 @@
 body {
     font-family:  Comfortaa, Helvetica, Arial, sans-serif;
     font-size: 1em;
-    background:blueviolet ;
+    background:slateblue ;
     /* line-height: 1.6; */
 }
     
 .parent_grid {
     /* background: linear-gradient(#ffffff 25%, ivory 25%, blueviolet 50%); */
-    background: linear-gradient(#f5deb3 40%, blueviolet 60%);
+    background: linear-gradient(#f5deb3 40%, slateblue 60%);
     /* background:#ff0000; */
     display: grid;
     grid-template-columns:auto 5px 300px;
@@ -65,7 +65,7 @@ body {
 .object1 {
     position: absolute; top: 18px; right: 77px; 
     width: 120px; height: 120px;
-    background: linear-gradient(45deg, rgba(0, 0, 0, 0), blueviolet); 
+    background: linear-gradient(45deg, rgba(0, 0, 0, 0), slateblue); 
     border-radius: 50%; 
     opacity: 1;
     z-index: 2;
@@ -74,7 +74,7 @@ body {
 .object2 {
     position: absolute; top: 20px; right: 50px; 
     width: 120px; height: 120px;
-    background: linear-gradient(90deg, rgba(0, 0, 0, 0), blueviolet); 
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0), slateblue); 
     border-radius: 50%; 
     opacity: 0.6;
     z-index: 3;
@@ -83,7 +83,7 @@ body {
 .object3 {
     position: absolute; top: 35px; right: 65px; 
     width: 120px; height: 120px;
-    background: linear-gradient(rgba(0, 0, 0, 0), blueviolet); 
+    background: linear-gradient(rgba(0, 0, 0, 0), slateblue); 
     border-radius: 50%; 
     opacity: 0.6;
     z-index: 4;
@@ -110,10 +110,11 @@ body {
     /* background:red; */
     background:rgba(255, 255, 255, 1);
     margin: 30px 10px 30px 10px;
-    padding: 20px 20px 30px 30px;
+    padding: 100px 20px 30px 30px;
     border-radius: 50% 10px;
     line-height: 1.6;
     font-size:0.7em;
+    overflow-y: auto
 }
 
 .section_gauche > div {
@@ -128,7 +129,7 @@ body {
     /* background: red; */
     height: 75px;
     z-index:3;
-    border-radius: 0 0 0 30px;     
+    border-radius: 0 0 20px 30px;     
 }
 
 .coordonnees {
@@ -151,16 +152,16 @@ body {
 
 .adresse {
     position: fixed;
-    top: 75px;
-    right: 15px;
+    top: 140px;
+    right: 175px;
     z-index: 7;
     opacity:0.5;
 }
 
 .telephone {
     position: fixed;
-    top: 138px;
-    right: 45px;
+    top: 75px;
+    right: 210px;
     z-index: 7;
     opacity:0.5;
 
@@ -169,20 +170,12 @@ body {
 .courriel {
     position: fixed;
     top: 110px;
-    right: 20px;
+    right: 200px;
     z-index: 7;
     opacity:0.5;
 }
 
-.adresse:hover {
-    opacity: 1;
-}
-
-.telephone:hover {
-    opacity: 1;
-}
-
-.courriel:hover {
+.telephone:hover, .courriel:hover, .adresse:hover  {
     opacity: 1;
 }
 
@@ -205,38 +198,45 @@ body {
     /* background:#00ffff; */
     padding: 3% 10%;
     overflow-y: auto;
-    border-radius: 10px 50% 0 25px;
+    border-radius: 10px 50% 5% 25px;
     z-index: 1;
     line-height: 1.6;
     /* border: 10px solid blueviolet; */
     border: 10px solid rgba(0, 0, 0, 0);
 }
 
+.nav_arrows {
+    position:fixed;
+    left:1%;
+    top:30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* background: red; */
+    z-index: 2;
+}
+
 .arrow_up {
-    position: fixed;
-    top: 140px;
-    left: 1%;
     opacity:0.5;
 }
 
 .arrow_stop {
-    position: fixed;
-    top: 175px;
-    left: 1%;
     opacity:0.5;  
 }
 
 .arrow_down {
-    position: fixed;
-    top: 210px;
-    left: 1%;
     opacity:0.5; 
     transform: rotate(0.5turn);
 }
 
+.arrow_up:hover, .arrow_stop:hover, .arrow_down:hover {
+    opacity: 1;
+}
+
+
 .section_principale > h2 {
     color: blueviolet;
-    text-decoration: underline;
+    /* text-decoration: underline; */
     font-weight:bold;
     font-size:large;
 }

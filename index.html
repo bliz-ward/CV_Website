@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="meyerReset.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Comfortaa">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
     <title>Julien Boccou</title>
 </head>
 
@@ -20,28 +21,27 @@
             <div class=object1></div>
             <div class=object2></div>
             <div class=object3></div>
-
+            <div class="coordonnees">
+                <div>
+                    <img src="img/location.png" alt="adresse" class="adresse" width=28px height=28px>
+                    <a href="https://goo.gl/maps/KifRPjR4WdphfCodA"></a>
+                </div>
+                <div>
+                    <img src="img/phone.png" alt="téléphone" class="telephone" width=30px height=30px>
+                    <!-- <a href="tel:+33695221604">0695221604</a> -->
+                </div>
+                <div>
+                    <img src="img/mail.png" alt="courriel" class="courriel" width=30px height=30px>
+                    <!-- <a href="mailto:julien.boccou@viacesi.fr">julien.boccou@viacesi.fr</a> -->
+                </div>
+            </div>
             <h1 class="title">Développeur Informatique</h1>
         </header>
 
 
 
         <section class="section_gauche">
-            <div class="coordonnees">
-                <div>
-                    <img src="img/location.png" alt="adresse" width=30px height=30px>
-                    <a href="https://goo.gl/maps/KifRPjR4WdphfCodA">Plougastel Daoulas</a>
-                </div>
-                <div>
-                    <img src="img/phone.png" alt="téléphone" width=30px height=30px>
-                    <a href="tel:+33695221604">0695221604</a>
-                </div>
-                <div>
-                    <img src="img/mail.png" alt="courriel" width=30px height=30px>
-                    <a href="mailto:julien.boccou@viacesi.fr">julien.boccou@viacesi.fr</a>
-                </div>
-            </div>
-            <hr>
+            
             <div class="resume">
                 <div>
                     <p>Je suis motivé par <span class="violet">l’innovation</span> et <span
@@ -66,18 +66,19 @@
                 </div>
             </div>
         </section>
+        <div class="void"></div>
 
         <div class="separator"></div>
         
         <section class="section_principale">
             <hr>
-            <h2>Formations</h2>
+            <h2 id="top">Formations</h2>
             <ul class="formations">
-                <li>2020-2022 : <strong>développeur informatique</strong> – CESI Brest</li>
-                <li>Master en <strong>management du spectacle vivant</strong> – UBO Brest</li>
-                <li>Maîtrise de <strong>musicologie</strong> – Rennes 2</li>
+                <li>2020-2022 : <br/> <strong>développeur informatique</strong> <br/> – CESI Brest</li>
+                <li>Master en <strong>management du spectacle vivant</strong> <br/> – UBO Brest</li>
+                <li>Maîtrise de <strong>musicologie</strong> <br/> – Rennes 2</li>
             </ul>
-            <h2>Expériences</h2>
+            <h2 id="middle">Expériences</h2>
             <ul class="experiences">
                 <li>
                     <strong>Enseignant en éducation musicale (2013-2017)</strong><br>
@@ -95,7 +96,7 @@
                     réglementaires
                 </li>
             </ul>
-            <h2>Compétences</h2>
+            <h2 >Compétences</h2>
             <ul class="competences">
                 <li>
                     <strong>Animation de projet </strong> <br>
@@ -109,13 +110,23 @@
                     Communiquer en externe et en interne <br>
                     Mobiliser des techniques de médiation, écoute et relation à la personne
                 </li>
-                <li>
+                <li id="bottom">
                     <strong>Créativité</strong> <br>
                     Utiliser les bases de l’infographie et réaliser des supports de communication <br>
                     Réaliser un prise de son et créer un design sonore : Ableton Live et Max for Live <br>
                     Multi-instrumentiste et compositeur. Expérience scène et studio
                 </li>
             </ul>  
+            <div >
+                <a href="#top"><img src="/img/arrow.png" alt="naviguer vers le haut" class="arrow_up" width=30px height=30px></a>
+            </div>
+            <div>
+                <a href="#middle"><img src="/img/neutral.png" alt="stop" class="arrow_stop" width=30px height=30px></a>
+            </div>
+            <div >           
+                <a href="#bottom"><img src="/img/arrow.png" alt="naviguer vers le bas" class="arrow_down" width=30px height=30px></a>
+            </div>
+
         </section>
 
         <div class="fog"></div>
